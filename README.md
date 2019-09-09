@@ -1,15 +1,9 @@
-<<<<<<< HEAD
+# HEAD
 <p align="center"><img src="https://dovgopol.dev/images/apps/darkweather/github/darkweather-1.png" width="200" title="MovieNight">     <img src="https://dovgopol.dev/images/apps/darkweather/github/darkweather-2.png" width="200" title="MovieNight">     <img src="https://dovgopol.dev/images/apps/darkweather/github/darkweather-3.png" width="200" title="MovieNight"></p>
 
-# DarkWeather
+# HangMan
+A simple "guess the word" iOS application made in Objective-C and Firebase. This application was made for the "Mobile Apps iOS" subject assignment at the Academy of Information Technology in Sydney by following all "yes and no"s.
 
-An iOS application that forecasts the weather via DarkSky API. You can save multiple locations using CoreData.
 
 # What I Learned
-
-* Core Data
-* DispatchGroup
-=======
-# HangMan
-HangMan game in Objective-C and Firebase
->>>>>>> 39c1e661d5291d2e42e35542cef536969d4e29d4
+* Got familiar with Objective-C
