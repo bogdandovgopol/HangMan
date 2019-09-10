@@ -16,7 +16,7 @@ NSString * const MAIN_STORYBOARD = @"Main";
 //IDENTIFICATORS
 NSString * const SIGNINVC_ID = @"SignInVC";
 NSString * const MENUVC_ID = @"MenuVC";
-extern NSString * const LEADERBOARD_CELL_ID = @"LeaderBoardCell";
+NSString * const LEADERBOARD_CELL_ID = @"LeaderBoardCell";
 
 //SEGUES
 NSString * const TO_GAME_SEGUE = @"toGame";
