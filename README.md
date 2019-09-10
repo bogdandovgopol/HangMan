@@ -3,6 +3,9 @@
 # HangMan
 A simple "guess the word" iOS application made in Objective-C and Firebase. This application was made for the "Mobile Apps iOS" subject assignment at the Academy of Information Technology in Sydney by following all "yes and no"s.
 
+# How to install
+Run `pod update` command in the project directory.
+
 
 # What I Learned
 * Got familiar with Objective-C
