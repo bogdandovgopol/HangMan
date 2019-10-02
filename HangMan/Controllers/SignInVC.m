@@ -23,22 +23,23 @@
 //sing in user and redirect to MenuVC
 - (void)signInUser {
     [activityIndicator startAnimating];
+    //create credentials
+    FIRAuthCredential *credential = [FIREmailAuthProvider credentialWithEmail:[emailTxt text] password:[passwordTxt text]];
     //sign in
-    [[AppHelper auth] signInWithEmail:[emailTxt text]
-                             password:[passwordTxt text]
-                           completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
-                             if(error) {
-                                 [[self activityIndicator] stopAnimating];
-                                 //show the error message
-                                 [AppHelper presentSimpleAlertWithTitle:@"Error" Message:[error localizedDescription] adnViewController:self];
-                                 return;
-                             }
-                             if([authResult user]) {
-                                 [[self activityIndicator] stopAnimating];
-                                 //redirect to MenuVC
-                                 [self dismissViewControllerAnimated:YES completion:nil];
-                             }
-                         }];
+    [[AppHelper auth] signInWithCredential:credential completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
+        if(error) {
+            [[self activityIndicator] stopAnimating];
+            //show the error message
+            [AppHelper presentSimpleAlertWithTitle:@"Error" Message:[error localizedDescription] adnViewController:self];
+            return;
+        }
+        if([authResult user]) {
+            [[self activityIndicator] stopAnimating];
+            //redirect to MenuVC
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
+
 }
 
 - (void)validateFields {
