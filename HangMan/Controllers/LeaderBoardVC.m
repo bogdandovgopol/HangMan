@@ -29,7 +29,7 @@
 
 //get users from firestore/db and save to players array
 - (void)prepareData {
-    //get users from firestore ordered descending by score
+    //get users from firestore ordered descending by score and limited to 20 records
     [[[[[AppHelper db] collectionWithPath:FIRESTORE_USERS] queryOrderedByField:@"score" descending:YES] queryLimitedTo:20] getDocumentsWithCompletion:^(FIRQuerySnapshot *snapshot, NSError *error) {
         if(error) {
             [AppHelper presentSimpleAlertWithTitle:@"Error" Message:[error localizedDescription] adnViewController:self];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD321380AA7457D76C576A5 /* libPods-HangMan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC91A78E35175425CE790B /* libPods-HangMan.a */; };
 		6F6D1903231CA74B00EC425C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D1902231CA74B00EC425C /* AppDelegate.m */; };
 		6F6D1909231CA74B00EC425C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D1907231CA74B00EC425C /* Main.storyboard */; };
 		6F6D190B231CA74D00EC425C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D190A231CA74D00EC425C /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CAC91A78E35175425CE790B /* libPods-HangMan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HangMan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3229518FEBF92EB27B5651EF /* Pods-HangMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HangMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HangMan/Pods-HangMan.release.xcconfig"; sourceTree = "<group>"; };
 		6F6D18FE231CA74B00EC425C /* HangMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D1901231CA74B00EC425C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD321380AA7457D76C576A5 /* libPods-HangMan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 				6F6D1900231CA74B00EC425C /* HangMan */,
 				6F6D18FF231CA74B00EC425C /* Products */,
 				98DFBED608100A2714E59591 /* Pods */,
+				B95A001F5352397540594643 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +177,14 @@
 				3229518FEBF92EB27B5651EF /* Pods-HangMan.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B95A001F5352397540594643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC91A78E35175425CE790B /* libPods-HangMan.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
