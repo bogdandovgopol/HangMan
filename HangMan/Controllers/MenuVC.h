@@ -28,9 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 //actions
 - (IBAction)easyModeClicked:(id)sender;
 - (IBAction)hardModeClicked:(id)sender;
-- (IBAction)leaderBoardClicked:(id)sender;
 - (IBAction)logoutClicked:(id)sender;
-- (IBAction)deleteAccountClicked:(id)sender;
 
 //support methods
 - (void)presentSignInVC;

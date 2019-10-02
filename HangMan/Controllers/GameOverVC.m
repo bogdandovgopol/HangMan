@@ -51,7 +51,7 @@
 }
 
 - (void)updateScore {
-    //updating score in firestore db. sourc: https://firebase.google.com/docs/firestore/manage-data/add-data#update-data
+    //updating score in firestore db. docs: https://firebase.google.com/docs/firestore/manage-data/add-data#update-data
     [[[[AppHelper db] collectionWithPath:FIRESTORE_USERS] documentWithPath:[[[AppHelper auth] currentUser] uid]] updateData:@{@"score": [NSNumber numberWithInteger:score]} completion:^(NSError * _Nullable error) {
         if(error) {
             [AppHelper presentSimpleAlertWithTitle:@"Error" Message:[error localizedDescription] adnViewController:self];

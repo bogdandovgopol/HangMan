@@ -56,7 +56,7 @@
                      //data removed
                      [[self activityIndicator] stopAnimating];
                      //redirect to signin screen
-                     [self presentSignInVC];
+                     [self goBack];
                  }
              }];
         }
@@ -74,12 +74,7 @@
 }
 
 //find sognin viewcontroller in authentication stroyboard and present it
-- (void)presentSignInVC {
-    //get Authentication.storyboard
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:AUTH_STORYBOARD bundle:nil];
-    //get SignInVC
-    SignInVC *signInController = (SignInVC *)[storyboard instantiateViewControllerWithIdentifier:SIGNINVC_ID];
-    //go back to menuVC
+- (void)goBack {
     [[self navigationController] popToRootViewControllerAnimated:YES];
 }
 @end

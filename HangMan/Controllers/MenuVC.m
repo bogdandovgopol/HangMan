@@ -71,10 +71,7 @@
     [self performSegueWithIdentifier:TO_GAME_SEGUE sender:nil];
 }
 
-- (IBAction)leaderBoardClicked:(id)sender {
-}
-
-//sign out user. source: https://firebase.google.com/docs/auth/ios/password-auth#next_steps
+//sign out user. docs: https://firebase.google.com/docs/auth/ios/password-auth#next_steps
 - (IBAction)logoutClicked:(id)sender {
     [[self activityIndicator] startAnimating];
     
@@ -92,37 +89,6 @@
     [[self activityIndicator] stopAnimating];
     //redirect to signin screen
     [self presentSignInVC];
-}
-
-//delete an account. source: https://firebase.google.com/docs/auth/ios/manage-users#delete_a_user
-- (IBAction)deleteAccountClicked:(id)sender {
-    [activityIndicator startAnimating];
-    FIRUser *user = [[AppHelper auth] currentUser];
-    
-    //delete account
-    [user deleteWithCompletion:^(NSError *_Nullable error) {
-        if (error) {
-            [[self activityIndicator] stopAnimating];
-            //user-friendly error notification
-            [AppHelper presentSimpleAlertWithTitle:@"Cannot delete an account" Message:[error localizedDescription] adnViewController:self];
-        } else {
-            //account deleted.
-            //delete data from db/firestore. source: https://firebase.google.com/docs/firestore/manage-data/delete-data#delete_documents
-            [[[[AppHelper db] collectionWithPath:FIRESTORE_USERS] documentWithPath:[user uid]]
-             deleteDocumentWithCompletion:^(NSError * _Nullable error) {
-                 if (error != nil) {
-                     [[self activityIndicator] stopAnimating];
-                     //user-friendly error notification
-                     [AppHelper presentSimpleAlertWithTitle:@"Error removing data" Message:[error localizedDescription] adnViewController:self];
-                 } else {
-                     //data removed
-                     [[self activityIndicator] stopAnimating];
-                     //redirect to signin screen
-                     [self presentSignInVC];
-                 }
-             }];
-        }
-    }];
 }
 
 //preparation before navigation

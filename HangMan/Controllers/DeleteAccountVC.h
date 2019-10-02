@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //Support methods
 - (void)checkIfTextFieldsAreEmpty;
-- (void)presentSignInVC;
+- (void)goBack;
 - (void)deleteAccount;
 @end
 

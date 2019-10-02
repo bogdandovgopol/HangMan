@@ -14,7 +14,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //initialize db connection
 }
 
 - (IBAction)signUpBtnClicked:(id)sender {
@@ -24,6 +23,7 @@
 }
 
 - (IBAction)hasAccountClicked:(id)sender {
+    //go back to previos vc
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -79,6 +79,7 @@
 }
 
 - (void)checkIfPasswordsAreSame {
+    //check if passwords are equal
     if(![[passwordTxt text] isEqualToString:[confirmPasswordTxt text]]) {
         [activityIndicator stopAnimating];
         //user-friendly error notification

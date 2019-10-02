@@ -98,7 +98,6 @@
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="leaderBoardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dkv-zh-UNy"/>
                                                     <segue destination="KeC-q2-Snh" kind="show" id="VCs-EI-xwH"/>
                                                 </connections>
                                             </button>
