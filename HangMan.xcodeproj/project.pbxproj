@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BD321380AA7457D76C576A5 /* libPods-HangMan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC91A78E35175425CE790B /* libPods-HangMan.a */; };
+		6F313A2923447E2000ED772C /* DeleteAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F313A2823447E2000ED772C /* DeleteAccountVC.m */; };
 		6F6D1903231CA74B00EC425C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D1902231CA74B00EC425C /* AppDelegate.m */; };
 		6F6D1909231CA74B00EC425C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D1907231CA74B00EC425C /* Main.storyboard */; };
 		6F6D190B231CA74D00EC425C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D190A231CA74D00EC425C /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		1CAC91A78E35175425CE790B /* libPods-HangMan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HangMan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3229518FEBF92EB27B5651EF /* Pods-HangMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HangMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HangMan/Pods-HangMan.release.xcconfig"; sourceTree = "<group>"; };
+		6F313A2723447E2000ED772C /* DeleteAccountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteAccountVC.h; sourceTree = "<group>"; };
+		6F313A2823447E2000ED772C /* DeleteAccountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteAccountVC.m; sourceTree = "<group>"; };
 		6F6D18FE231CA74B00EC425C /* HangMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D1901231CA74B00EC425C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F6D1902231CA74B00EC425C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				6FC8C3BD2324B26300DB0CFF /* GameOverVC.m */,
 				6FC8C3BF2324C59C00DB0CFF /* LeaderBoardVC.h */,
 				6FC8C3C02324C59C00DB0CFF /* LeaderBoardVC.m */,
+				6F313A2723447E2000ED772C /* DeleteAccountVC.h */,
+				6F313A2823447E2000ED772C /* DeleteAccountVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FC8C3C12324C59C00DB0CFF /* LeaderBoardVC.m in Sources */,
+				6F313A2923447E2000ED772C /* DeleteAccountVC.m in Sources */,
 				6F6D1920231CB71700EC425C /* SignUpVC.m in Sources */,
 				6F6D1911231CA74D00EC425C /* main.m in Sources */,
 				6F6D1903231CA74B00EC425C /* AppDelegate.m in Sources */,
