@@ -9,3 +9,9 @@ Run `pod update` command in the project directory.
 
 # What I Learned
 * Got familiar with Objective-C
+
+## Contact Info:
+- Email: bogdan@dovgopol.dev
+- Web: [dovgopol.dev](https://dovgopol.dev)
+
+# Thanks for stopping by!
